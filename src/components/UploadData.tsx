@@ -8,7 +8,7 @@ const { Dragger } = Upload;
 const props: UploadProps = {
   name: 'file',
   multiple: true,
-  action: 'https://run.mocky.io/v3/435e224c-44fb-4773-9faf-380c5e6a2188',
+  action: 'http://127.0.0.1:4010/api/367.28646585092395/programs/put/application-form',
   onChange(info) {
     const { status } = info.file;
     if (status !== 'uploading') {
