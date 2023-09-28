@@ -1,6 +1,6 @@
-import { UploadOutlined } from '@ant-design/icons';
 import type { UploadProps } from 'antd';
 import { message, Upload } from 'antd';
+import uploadIcon from '@/assets/upload.svg'
 
 
 const { Dragger } = Upload;
@@ -31,9 +31,7 @@ const UploadData = () => {
   return ( 
     <div>
       <Dragger {...props} style={{width: 400, margin: 'auto', padding: '20px 0'}}>
-        <p className="ant-upload-drag-icon">
-          <UploadOutlined style={{color: '#000', fontSize: 30}}/>
-        </p>
+          <img src={uploadIcon} alt="" />
         <p className="ant-upload-text" style={{color: '#000', fontWeight: 600, fontSize: 14}}>Upload cover image</p>
         <p className="ant-upload-hint" style={{color: '#979797', fontWeight: 300}}>
           16:9 ratio is recommended. Max image size 1mb
